@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "/wK0+jpEBmOfCRpTfY4gcQqNBA+ZwgTzs0gD6TBq9gTpcYpF1TZG9iRUm+UHnKzV/SktQ2BH4pVSaDoTgueCdg==",
+  "success": true,
+  "projectFilePath": "D:\\_Projects\\DDD Template\\Domain.Driven.Design.BaseTemplate\\DDD.API\\DDD.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DjordjeMiletic\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\DjordjeMiletic\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\DjordjeMiletic\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\DjordjeMiletic\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\DjordjeMiletic\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\DjordjeMiletic\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\DjordjeMiletic\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\DjordjeMiletic\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
