@@ -1,10 +1,11 @@
 ﻿using DDD.Domain.Common;
 using DDD.Domain.DomainEvents.WeatherForecasts;
 using DDD.Domain.Entities.ValueObjects;
+using DDD.Domain.Interfaces;
 
 namespace DDD.Domain.Entities.AggregateRoots
 {
-    public class WeatherForecast : AggregateRoot
+    public class WeatherForecast : AggregateRoot, IAudit
     {
         public Guid Id { get; set; }
 
@@ -13,6 +14,11 @@ namespace DDD.Domain.Entities.AggregateRoots
         public Temperature Temperature { get; set; } = null!;
 
         public string? Summary { get; set; }
+
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? ModifiedAt { get; set; }
+        public string? CreatedBy { get; set; }
+        public string? ModifiedBy { get; set; }
 
         public WeatherForecast(DateTime date, int temperature, string? summary)
         {

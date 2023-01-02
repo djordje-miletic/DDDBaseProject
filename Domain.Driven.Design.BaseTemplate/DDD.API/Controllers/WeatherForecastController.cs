@@ -1,3 +1,5 @@
+using DDD.Domain.Entities.AggregateRoots;
+using DDD.Domain.Entities.ValueObjects;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DDD.API.Controllers
@@ -21,12 +23,7 @@ namespace DDD.API.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
+            return Enumerable.Range(1, 5).Select(index => new WeatherForecast(DateTime.Now.AddDays(index),Random.Shared.Next(-20, 55), Summaries[Random.Shared.Next(Summaries.Length)]))
             .ToArray();
         }
     }
