@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "THV56la30X60c4nC+b0J997cQcaJ7H21Nc2l8UUqIJIEo5L/19qvtkDDwmXvLoAjpowpaTtXzUQkdhr8mCHGYA==",
+  "dgSpecHash": "YUOWmU2t8/8TC2Fc/vuOzDjYmpfBEzb6ZSHZnD/RxWvBKgzX9DSxiU99G1tMUj4wEga9izjCPjyvRA02SGFoDQ==",
   "success": true,
   "projectFilePath": "D:\\_Projects\\DDD Template\\Domain.Driven.Design.BaseTemplate\\DDD.Domain\\DDD.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DjordjeMiletic\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
+    "C:\\Users\\DjordjeMiletic\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

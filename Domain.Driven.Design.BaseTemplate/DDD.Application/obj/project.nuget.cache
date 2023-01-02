@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yAXyKAEDigCom5KoecyG1H37rk7wvokVMIrmcBe5DEzkWylCTubWaRpg6B75I+UrmKfWJBNxkU8AeZc4GBKKBQ==",
+  "dgSpecHash": "mttOUTT2ibN9n+dHvfT0qSZZZIkwdHQH4itdAkig4kpqM1HAZT/pyZdu+520h8Q8DBqrdDbYMoyx2lDl0FHPgA==",
   "success": true,
   "projectFilePath": "D:\\_Projects\\DDD Template\\Domain.Driven.Design.BaseTemplate\\DDD.Application\\DDD.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\DjordjeMiletic\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\DjordjeMiletic\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\DjordjeMiletic\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\DjordjeMiletic\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\DjordjeMiletic\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
