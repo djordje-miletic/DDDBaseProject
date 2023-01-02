@@ -20,6 +20,11 @@ namespace DDD.Domain.Entities.AggregateRoots
         public string? CreatedBy { get; set; }
         public string? ModifiedBy { get; set; }
 
+        private WeatherForecast()
+        {
+
+        }
+
         public WeatherForecast(DateTime date, int temperature, string? summary)
         {
             this.Id = Guid.NewGuid();

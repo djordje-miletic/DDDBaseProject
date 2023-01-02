@@ -11,6 +11,11 @@ namespace DDD.Domain.Entities.ValueObjects
 
         public int TemperatureF => 32 + (int)(Value / 0.5556);
 
+        private Temperature()
+        {
+
+        }
+
         public Temperature(int temperature)
         {
             if (temperature < -273)
