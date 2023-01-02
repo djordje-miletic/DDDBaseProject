@@ -7,13 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{80EAA180
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{9742666A-8095-42F3-9368-C847FD9D216D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Application", "DDD.Application\DDD.Application.csproj", "{73F1EFAD-A851-4B19-B897-91C9781B6EA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD.Application", "DDD.Application\DDD.Application.csproj", "{73F1EFAD-A851-4B19-B897-91C9781B6EA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Domain", "DDD.Domain\DDD.Domain.csproj", "{1F90AFF3-1042-4BB5-BA08-10D0CB799F82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD.Domain", "DDD.Domain\DDD.Domain.csproj", "{1F90AFF3-1042-4BB5-BA08-10D0CB799F82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Infrastructure", "DDD.Infrastructure\DDD.Infrastructure.csproj", "{44654931-AC60-46E8-A5D9-75D1CDE76227}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD.Infrastructure", "DDD.Infrastructure\DDD.Infrastructure.csproj", "{44654931-AC60-46E8-A5D9-75D1CDE76227}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.API", "DDD.API\DDD.API.csproj", "{2217CFB8-57B1-4960-822B-7449C8F106DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD.API", "DDD.API\DDD.API.csproj", "{2217CFB8-57B1-4960-822B-7449C8F106DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Migrations", "DDD.Migrations\DDD.Migrations.csproj", "{4191A937-CAC0-40AC-88BB-23BBE8B5827B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,12 +39,17 @@ Global
 		{2217CFB8-57B1-4960-822B-7449C8F106DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2217CFB8-57B1-4960-822B-7449C8F106DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2217CFB8-57B1-4960-822B-7449C8F106DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4191A937-CAC0-40AC-88BB-23BBE8B5827B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4191A937-CAC0-40AC-88BB-23BBE8B5827B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4191A937-CAC0-40AC-88BB-23BBE8B5827B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4191A937-CAC0-40AC-88BB-23BBE8B5827B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2217CFB8-57B1-4960-822B-7449C8F106DB} = {80EAA180-7C66-4118-A3AB-E877F4BED18F}
+		{4191A937-CAC0-40AC-88BB-23BBE8B5827B} = {9742666A-8095-42F3-9368-C847FD9D216D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F3C4CAF8-D15E-465E-86A0-63264CEDDCD7}
