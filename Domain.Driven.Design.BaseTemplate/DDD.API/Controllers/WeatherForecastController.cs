@@ -1,3 +1,4 @@
+using DDD.Application.UseCases.Weather.Queries.Get;
 using DDD.Domain.Entities.AggregateRoots;
 using DDD.Domain.Entities.ValueObjects;
 using Microsoft.AspNetCore.Mvc;
@@ -6,25 +7,17 @@ namespace DDD.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class WeatherForecastController : BaseController
     {
-        private static readonly string[] Summaries = new[]
+        public WeatherForecastController()
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
-        {
-            _logger = logger;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        [HttpGet]
+        [Route("{id}")]
+        public async Task<ActionResult<WeatherForecastViewModel>> Get([FromRoute] Guid id)
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast(DateTime.Now.AddDays(index),Random.Shared.Next(-20, 55), Summaries[Random.Shared.Next(Summaries.Length)]))
-            .ToArray();
+            return await this.Mediator.Send(new WeatherForecastGetQuery(id));
         }
     }
 }

@@ -1,6 +1,4 @@
-﻿using DDD.Domain.Entities;
-using DDD.Domain.Entities.AggregateRoots;
-using DDD.Domain.Entities.ValueObjects;
+﻿using DDD.Domain.Entities.AggregateRoots;
 using MediatR;
 
 namespace DDD.Application.UseCases.Weather.Queries.Get
@@ -14,12 +12,11 @@ namespace DDD.Application.UseCases.Weather.Queries.Get
 
         public Task<WeatherForecastViewModel> Handle(WeatherForecastGetQuery request, CancellationToken cancellationToken)
         {
-            Enumerable.Range(1, 5).Select(index => new WeatherForecast(DateTime.Now.AddDays(index),
+            WeatherForecast forecast = new WeatherForecast(DateTime.Now.AddDays(1),
                 Random.Shared.Next(-20, 55),
-                Summaries[Random.Shared.Next(Summaries.Length)]))
-            .ToArray();
+                Summaries[Random.Shared.Next(Summaries.Length)]);
 
-            return Task.FromResult(new WeatherForecastViewModel());
+            return Task.FromResult(new WeatherForecastViewModel(forecast));
         }
     }
 }
